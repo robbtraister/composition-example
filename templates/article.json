@@ -1,0 +1,11 @@
+{
+  "type": "layouts/dark",
+  "children": [
+    {
+      "type": "features/article/header"
+    },
+    {
+      "type": "features/article/body"
+    }
+  ]
+}
