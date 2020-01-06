@@ -1,0 +1,14 @@
+.blurb {
+  display: block;
+  padding: 5px;
+
+  &.dark {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &.light {
+    background-color: #fff;
+    color: #444;
+  }
+}

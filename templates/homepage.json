@@ -5,11 +5,7 @@
       "type": "features/header"
     },
     {
-      "type": "features/article-body",
-      "props": {
-        "source": "echo",
-        "query": "This is an article template"
-      }
+      "type": "features/blurb"
     },
     {
       "type": "features/interactive"

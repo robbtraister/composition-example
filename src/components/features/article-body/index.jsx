@@ -13,29 +13,13 @@ import styles from './styles.scss'
 // `
 const Div = (props) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
 
-class Client extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { client: false }
-  }
-  componentDidMount () {
-    this.setState({ client: true })
-  }
-
-  render () {
-    const { client } = this.state
-    return client && <div>Interactive</div>
-  }
-}
-
 const Text = ({ content }) => <>{content.data}</>
 
 const Body = (props) => {
   const theme = useTheme()
   return (
     <Div className={styles[theme]}>
-      <Content source="echo" query="This is article content" render={Text} />
-      <Client />
+      <Content {...props} render={Text} />
     </Div>
   )
 }
