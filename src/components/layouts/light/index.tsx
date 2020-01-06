@@ -2,13 +2,8 @@
 
 import React from 'react'
 
-import Common from '../common'
+import ThemedLayout from '../themed'
 
-import { Provider } from '~/contexts/theme'
-
-const LightLayout = (props) =>
-  <Provider value={{ theme: 'light' }}>
-    <Common {...props} />
-  </Provider>
+export const LightLayout = (props) => <ThemedLayout {...props} theme='light' />
 
 export default LightLayout

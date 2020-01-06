@@ -1,3 +1,4 @@
 'use strict'
 
-export default ({ children }) => children
+import JsonLayout from '../themed/json'
+export default JsonLayout
