@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { App, Styles } from '@composition/components'
+import { App, Styles } from '@composition/composer'
 
 const DefaultOutput = () => {
   return <html>
@@ -12,7 +12,7 @@ const DefaultOutput = () => {
       <Styles />
     </head>
     <body>
-      <App />
+      <App single-page />
     </body>
   </html>
 }

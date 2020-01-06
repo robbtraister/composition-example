@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { App, Styles } from '@composition/components'
+import { App, Styles } from '@composition/composer'
 
 const AmpOutput = () => {
   return <html>

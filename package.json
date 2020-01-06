@@ -8,9 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@composition/composer": "^0.0.0"
+  "devDependencies": {
+    "@composition/composer": "^0.0.0",
+    "react": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   },
-  "devDependencies": {},
   "description": ""
 }

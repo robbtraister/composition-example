@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-import { Content } from '@composition/components'
+import { Content } from '@composition/composer'
 import { useTheme } from '~/contexts/theme'
 
 import styles from './styles.scss'
