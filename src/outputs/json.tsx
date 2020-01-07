@@ -3,6 +3,6 @@
 import React from 'react'
 
 const JsonOutput = ({ children }) => <>[{children}]</>
-JsonOutput.contentType = 'application/json'
+export const contentType = 'application/json'
 
 export default JsonOutput

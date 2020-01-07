@@ -1,9 +1,7 @@
 'use strict'
 
-export default {
-  async fetch (query) {
-    return {
-      data: query
-    }
+export async function fetch (query) {
+  return {
+    data: query
   }
 }
