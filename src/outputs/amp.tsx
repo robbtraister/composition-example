@@ -2,17 +2,15 @@
 
 import React from 'react'
 
-import { App, Resource, Styles } from '@composition/composer'
+import { App, Styles, useResource } from '@composition/composer'
 
 const AmpOutput = () => {
+  const resource = useResource({ name: 'public/resources/main.css' })
+
   return <html>
     <head>
       <title>Composition Test</title>
-      <Resource
-        name='public/resources/main.css'
-        render={({ resource }) =>
-          <style amp-custom="true" dangerouslySetInnerHTML={{ __html: resource }} />}
-        />
+      <style amp-custom="true" dangerouslySetInnerHTML={{ __html: resource }} />
       <Styles inline amp-custom="true" />
     </head>
     <body>
