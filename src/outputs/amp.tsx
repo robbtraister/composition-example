@@ -9,6 +9,8 @@ const AmpOutput = () => {
 
   return <html>
     <head>
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
       <title>Composition Test</title>
       <style amp-custom="true" dangerouslySetInnerHTML={{ __html: resource }} />
       <Styles inline amp-custom="true" />
