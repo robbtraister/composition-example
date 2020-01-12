@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@composition/composer": "^0.0.0",
+    "@types/react": "^16.9.17",
     "react": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
