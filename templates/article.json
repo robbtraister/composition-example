@@ -1,5 +1,8 @@
 {
-  "type": "layouts/dark",
+  "type": "layouts/themed",
+  "props": {
+    "theme": "dark"
+  },
   "children": [
     {
       "type": "features/header"
@@ -8,7 +11,9 @@
       "type": "features/article-body",
       "props": {
         "source": "echo",
-        "query": "This is an article template"
+        "query": {
+          "data": "This is an article template"
+        }
       }
     },
     {

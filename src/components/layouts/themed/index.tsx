@@ -4,17 +4,12 @@ import React from 'react'
 
 import styles from './styles.scss'
 
-import { Provider, useTheme } from '~/contexts/theme'
-
-const Consumer = (props) => {
-  const theme = useTheme()
-  return <div className={`${styles.layout} ${styles[theme]}`}>{props.children}</div>
-}
+import { Provider } from '~/contexts/theme'
 
 export const ThemedLayout = (props) => {
-  const { theme, ...passThroughProps } = props
+  const { theme } = props
   return <Provider value={{ theme }}>
-    <Consumer {...passThroughProps} />
+    <div className={`${styles.layout} ${styles[theme]}`}>{props.children}</div>
   </Provider>
 }
 

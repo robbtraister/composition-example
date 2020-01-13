@@ -1,5 +1,8 @@
 {
-  "type": "layouts/dark",
+  "type": "layouts/themed",
+  "props": {
+    "theme": "dark"
+  },
   "children": [
     {
       "type": "features/header"
