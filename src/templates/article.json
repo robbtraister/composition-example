@@ -19,6 +19,9 @@
       },
       {
         "type": "features/interactive"
+      },
+      {
+        "type": "features/error"
       }
     ]
   }
