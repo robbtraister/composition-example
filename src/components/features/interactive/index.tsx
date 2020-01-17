@@ -1,30 +1,30 @@
 'use strict'
 
-import React, { useEffect, useState } from 'react'
+import React /*, { useEffect, useState } */ from 'react'
 
-// class Interactive extends React.Component {
-//   constructor (props) {
-//     super(props)
-//     this.state = { client: false }
-//   }
-//   componentDidMount () {
-//     this.setState({ client: true })
-//   }
+// function Interactive() {
+//   const [interactive, setInteractive] = useState(false)
 
-//   render () {
-//     const { client } = this.state
-//     return client && <div>Interactive</div>
-//   }
+//   useEffect(() => {
+//     setInteractive(true)
+//   }, [])
+
+//   return interactive && <div>Interactive</div>
 // }
 
-function Interactive() {
-  const [interactive, setInteractive] = useState(false)
+class Interactive extends React.Component<{}, { interactive: boolean }> {
+  constructor(props) {
+    super(props)
+    this.state = { interactive: false }
+  }
 
-  useEffect(() => {
-    setInteractive(true)
-  }, [])
+  componentDidMount() {
+    this.setState({ interactive: true })
+  }
 
-  return interactive && <div>Interactive</div>
+  render() {
+    return this.state.interactive && <div>Interactive</div>
+  }
 }
 
 export default Interactive

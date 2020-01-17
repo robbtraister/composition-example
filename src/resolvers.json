@@ -1,0 +1,10 @@
+[
+  {
+    "uri": "/",
+    "template": "homepage"
+  },
+  {
+    "pattern": "^/(.*)",
+    "template": "article"
+  }
+]

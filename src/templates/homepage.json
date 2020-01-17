@@ -1,0 +1,19 @@
+{
+  "tree": {
+    "type": "layouts/themed",
+    "props": {
+      "theme": "dark"
+    },
+    "children": [
+      {
+        "type": "features/header"
+      },
+      {
+        "type": "features/blurb"
+      },
+      {
+        "type": "features/interactive"
+      }
+    ]
+  }
+}

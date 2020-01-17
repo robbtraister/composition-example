@@ -1,0 +1,25 @@
+{
+  "tree": {
+    "type": "layouts/themed",
+    "props": {
+      "theme": "dark"
+    },
+    "children": [
+      {
+        "type": "features/header"
+      },
+      {
+        "type": "features/article-body",
+        "props": {
+          "source": "echo",
+          "query": {
+            "data": "This is an article template"
+          }
+        }
+      },
+      {
+        "type": "features/interactive"
+      }
+    ]
+  }
+}

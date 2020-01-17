@@ -2,16 +2,18 @@
 
 import React from 'react'
 
-export const JsonOutput = ({ children }) =>
-  <>[{
-    [].concat(children || [])
-      .filter(child => child)
-      .map((child, index) =>
-        <React.Fragment key={index}>{(index === 0) ? '' : ','}{child}</React.Fragment>
-      )
-  }]</>
+import SparseOutput from './sparse'
+
+// we have to render the full tree in order to populate cache
+const JsonOutput = () => {
+  return <SparseOutput />
+}
 
 export const contentType = 'application/json'
-export const fallbacks = null
+// export const fallbacks = null
+
+export function transform(_, context) {
+  return context
+}
 
 export default JsonOutput

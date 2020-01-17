@@ -2,14 +2,15 @@
 
 import React from 'react'
 
-import { App, Styles } from '@composition/composer'
+import { App, Meta, Styles, Title } from '@composition/composer'
+
+import './styles.scss'
 
 const DefaultOutput = () => {
   return <html>
     <head>
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width" />
-      <title>Composition Test</title>
+      <Meta />
+      <Title />
       <link rel='stylesheet' type='text/css' href='/resources/main.css' />
       <Styles />
     </head>
