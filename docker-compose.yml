@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  # db:
+  #   image: robbtraister/mongo-vandelay
+  #   ports:
+  #     - 27017:27017
+  #   volumes:
+  #     - ./data/db:/data/db:rw
+  #     - ./data/dumps:/data/dumps:rw
+  #     - ./data/restore:/data/restore:rw
+
+  composition:
+    build: .
+    command: build
+    # environment:
+    #   MONGO_URL: mongodb://db:27017/composition
+    ports:
+      - 8080:8080
+    volumes:
+      - ./build:/opt/composition/bundle/build:rw
+      - ./public:/opt/composition/bundle/public:ro
+      - ./src:/opt/composition/bundle/src:ro
