@@ -13,12 +13,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@composition/composer": "0.0.1-beta.11",
     "@types/react": "^16.9.17",
     "react": "^16.12.0",
     "react-router-dom": "^5.1.2"
   },
   "description": "",
-  "dependencies": {
-    "@composition/composer": "0.0.1-beta.10"
-  }
+  "dependencies": {}
 }
