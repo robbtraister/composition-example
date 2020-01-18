@@ -1,5 +1,5 @@
 'use strict'
 
-export default (props) => {
+export default props => {
   throw new Error('error component')
 }

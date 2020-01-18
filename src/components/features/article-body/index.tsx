@@ -11,11 +11,17 @@ import styles from './styles.scss'
 // const Div = styled.div`
 //   padding: 10px;
 // `
-const Div = (props) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
+const Div = (props: {
+  children?: React.ReactNode
+  className?: string
+  style?: object
+}) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
 
-const Text = ({ content }) => <>{content.data}</>
+const Text = ({ content }: { content: { data?: object } }) => (
+  <>{content.data}</>
+)
 
-const Body = (props) => {
+const Body = props => {
   const theme = useTheme()
   return (
     <Div className={styles[theme]}>

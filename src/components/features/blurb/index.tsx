@@ -9,7 +9,11 @@ import styles from './styles.scss'
 
 const Blurb = () => {
   const theme = useTheme()
-  return <Link className={`${styles.blurb} ${styles[theme]}`} to="/article">article</Link>
+  return (
+    <Link className={`${styles.blurb} ${styles[theme]}`} to="/article">
+      article
+    </Link>
+  )
 }
 
 export default Blurb
