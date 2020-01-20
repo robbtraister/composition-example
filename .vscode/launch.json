@@ -7,8 +7,21 @@
     {
       "type": "node",
       "request": "attach",
+      "name": "Attach to Docker",
+      "port": 9229,
+      "remoteRoot": "/opt/composition/bundle",
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceFolder}/*"
+      }
+    },
+    {
+      "type": "node",
+      "request": "attach",
       "name": "Attach to Server",
-      "port": 9229
+      "port": 9229,
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceFolder}/*"
+      }
     },
     {
       "type": "node",
@@ -19,7 +32,10 @@
         "compose",
         "dev"
       ],
-      "port": 9229
+      "port": 9229,
+      "sourceMapPathOverrides": {
+        "webpack:///*": "${workspaceFolder}/*"
+      }
     },
     {
       "type": "chrome",

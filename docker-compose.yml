@@ -12,11 +12,14 @@ services:
 
   composition:
     build: .
-    command: build
+    # command: manifest
+    # depends_on:
+    #   - db
     # environment:
     #   MONGO_URL: mongodb://db:27017/composition
     ports:
       - 8080:8080
+      - 9229:9229
     volumes:
       - ./build:/opt/composition/bundle/build:rw
       - ./public:/opt/composition/bundle/public:ro
