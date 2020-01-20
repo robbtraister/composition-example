@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "server.js",
   "scripts": {
-    "db": "docker run --rm --name composition -p 27017:27017 -v \"$(npm prefix)\"/data/db:/data/db:rw -v \"$(npm prefix)\"/data/dumps:/data/dumps:rw -v \"$(npm prefix)\"/data/restore:/data/restore:rw robbtraister/mongo-vandelay",
+    "db": "docker-compose up db",
     "dev": "compose dev",
     "dump": "docker exec $(docker ps --filter name=^composition$ --format '{{.ID}}') ./dump.sh",
     "prod": "compose prod",
@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@composition/composer": "0.0.1-beta.13",
+    "@composition/composer": "0.0.1-beta.15",
     "@types/react": "^16.9.17",
     "@typescript-eslint/eslint-plugin": "^2.16.0",
     "@typescript-eslint/parser": "^2.16.0",
@@ -34,5 +34,6 @@
     "typescript": "^3.7.5"
   },
   "description": "",
-  "prettier": "prettier-config-standard"
+  "prettier": "prettier-config-standard",
+  "dependencies": {}
 }
