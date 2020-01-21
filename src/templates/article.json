@@ -11,10 +11,8 @@
       {
         "type": "features/article-body",
         "props": {
-          "source": "echo",
-          "query": {
-            "data": "This is an article template"
-          }
+          "source": "proxy",
+          "query": { "data": "This is an article template" }
         }
       },
       {

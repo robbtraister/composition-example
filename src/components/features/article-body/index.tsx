@@ -17,9 +17,7 @@ const Div = (props: {
   style?: object
 }) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
 
-const Text = ({ content }: { content: { data?: object } }) => (
-  <>{content.data}</>
-)
+const Text = ({ content }: { content: any }) => <>{content && content.data}</>
 
 const Body = props => {
   const theme = useTheme()
