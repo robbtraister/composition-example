@@ -12,6 +12,7 @@ const DefaultFormat = () => {
       <head>
         <Meta />
         <Title />
+        <link rel="amphtml" href="?format=amp" />
         <link rel="stylesheet" type="text/css" href="/resources/main.css" />
         <Styles />
       </head>
