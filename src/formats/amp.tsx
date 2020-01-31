@@ -24,14 +24,14 @@ function useCanonicalHref() {
 
   return (
     location
-      // strip custom output query param
-      .replace(/(\?|&)output=[^&]*(&|$)/, (_, symbol) => symbol)
+      // strip custom Format query param
+      .replace(/(\?|&)Format=[^&]*(&|$)/, (_, symbol) => symbol)
       // strip trailing ?
       .replace(/\?$/, '')
   )
 }
 
-const AmpOutput = () => {
+const AmpFormat = () => {
   const canonicalHref = useCanonicalHref()
   const mainCss = useResource({ name: 'public/resources/main.css' }) || ''
   const styles = useStyles() || ''
@@ -71,4 +71,4 @@ const AmpOutput = () => {
   )
 }
 
-export default AmpOutput
+export default AmpFormat

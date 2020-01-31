@@ -2,11 +2,11 @@
 
 import React from 'react'
 
-import SparseOutput from './sparse'
+import SparseFormat from './sparse'
 
 // we have to render the full tree in order to populate cache
-const JsonOutput = () => {
-  return <SparseOutput />
+const JsonFormat = () => {
+  return <SparseFormat />
 }
 
 export const contentType = 'application/json'
@@ -16,4 +16,4 @@ export function transform(_, context) {
   return context
 }
 
-export default JsonOutput
+export default JsonFormat

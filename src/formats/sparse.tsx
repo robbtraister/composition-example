@@ -4,8 +4,8 @@ import React from 'react'
 
 import { Tree } from '@composition/composer'
 
-const SparseOutput = () => {
+const SparseFormat = () => {
   return <Tree />
 }
 
-export default SparseOutput
+export default SparseFormat

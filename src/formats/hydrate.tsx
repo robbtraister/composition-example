@@ -6,7 +6,7 @@ import { App, Meta, Styles, Title } from '@composition/composer'
 
 import './styles.scss'
 
-const DefaultOutput = () => {
+const DefaultFormat = () => {
   return (
     <html>
       <head>
@@ -16,10 +16,10 @@ const DefaultOutput = () => {
         <Styles />
       </head>
       <body>
-        <App single-page />
+        <App hydrate-only />
       </body>
     </html>
   )
 }
 
-export default DefaultOutput
+export default DefaultFormat
