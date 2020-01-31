@@ -1,5 +1,11 @@
 'use strict'
 
-export default props => {
-  throw new Error('error component')
+import React from 'react'
+
+const ErrorImpl = props => {
+  throw new Error('error component2')
 }
+
+const ErrorComp = () => <ErrorImpl />
+
+export default ErrorComp
