@@ -4,15 +4,16 @@
     "props": {
       "theme": "dark"
     },
-    "children": [
-      {
+    "children": [{
         "type": "features/header"
       },
       {
         "type": "features/article-body",
         "props": {
           "source": "proxy",
-          "query": { "data": "This is an article template" }
+          "query": {
+            "data": "This is an article template"
+          }
         }
       },
       {

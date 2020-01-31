@@ -4,8 +4,7 @@
     "props": {
       "theme": "dark"
     },
-    "children": [
-      {
+    "children": [{
         "type": "features/header"
       },
       {
