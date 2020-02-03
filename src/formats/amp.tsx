@@ -37,7 +37,7 @@ const AmpFormat = () => {
   const styles = useStyles() || ''
 
   return (
-    <html amp="">
+    <html amp="" lang="en">
       <head>
         <Meta />
         <Title />

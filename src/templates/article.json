@@ -4,7 +4,8 @@
     "props": {
       "theme": "dark"
     },
-    "children": [{
+    "children": [
+      {
         "type": "features/header"
       },
       {
@@ -23,5 +24,10 @@
         "type": "features/error"
       }
     ]
+  },
+  "meta": {
+    "charset": "UTF-8",
+    "viewport": "width=device-width",
+    "description": "article"
   }
 }

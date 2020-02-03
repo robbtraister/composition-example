@@ -8,7 +8,7 @@ import './styles.scss'
 
 const DefaultFormat = () => {
   return (
-    <html>
+    <html lang="en">
       <head>
         <Meta />
         <Title />
