@@ -23,4 +23,6 @@ const DefaultFormat = () => {
   )
 }
 
+export const contentType = 'text/html'
+
 export default DefaultFormat
