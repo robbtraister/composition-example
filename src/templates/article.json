@@ -18,6 +18,12 @@
         }
       },
       {
+        "type": "features/server-clock"
+      },
+      {
+        "type": "features/clock"
+      },
+      {
         "type": "features/interactive"
       },
       {
