@@ -1,6 +1,7 @@
 'use strict'
 
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Content } from '@composition/composer'
 import { useTheme } from '~/contexts/theme'
@@ -26,6 +27,12 @@ const Body = props => {
       <Content {...props} render={Text} />
     </Div>
   )
+}
+
+Body.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  style: PropTypes.object
 }
 
 export default Body

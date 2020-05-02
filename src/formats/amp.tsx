@@ -6,7 +6,7 @@ import {
   App,
   Meta,
   /* Resource, Styles, */ Title,
-  usePageContext,
+  useRootContext,
   useResource,
   useStyles
 } from '@composition/composer'
@@ -20,7 +20,7 @@ declare module 'react' {
 }
 
 function useCanonicalHref() {
-  const { location } = usePageContext()
+  const { location } = useRootContext()
 
   return (
     location
