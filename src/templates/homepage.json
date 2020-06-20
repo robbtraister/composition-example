@@ -2,7 +2,7 @@
   "tree": {
     "type": "layouts/themed",
     "props": {
-      "theme": "dark"
+      "theme": "light"
     },
     "children": [
       {

@@ -1,22 +1,22 @@
 'use strict'
 
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
-import { Content } from '@composition/composer'
+import { Content } from '@composition/components'
 import { useTheme } from '~/contexts/theme'
 
 import styles from './styles.scss'
 
-// import styled from 'styled-components'
-// const Div = styled.div`
-//   padding: 10px;
-// `
-const Div = (props: {
-  children?: React.ReactNode
-  className?: string
-  style?: object
-}) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
+import styled from 'styled-components'
+const Div = styled.div`
+  padding: 10px;
+`
+// const Div = (props: {
+//   children?: React.ReactNode
+//   className?: string
+//   style?: object
+// }) => <div {...props} style={{ padding: '10px', ...(props.style || {}) }} />
 
 const Text = ({ content }: { content: any }) => <>{content && content.data}</>
 

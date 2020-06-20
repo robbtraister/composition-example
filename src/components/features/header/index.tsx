@@ -1,5 +1,6 @@
 'use strict'
 
+import PropTypes from 'prop-types'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -11,9 +12,13 @@ const Header = props => {
   const theme = useTheme()
   return (
     <h1 className={`${styles.header} ${styles[theme]}`}>
-      <NavLink to="/">The Washington Post</NavLink>
+      <NavLink to="/">{props.title || 'The Washington Post'}</NavLink>
     </h1>
   )
+}
+
+Header.propTypes = {
+  title: PropTypes.string
 }
 
 export default Header

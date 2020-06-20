@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@composition/composer": "0.0.1-beta.22",
+    "@composition/composer": "0.1.0-beta.6",
     "@types/react": "^16.9.34",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
     "@typescript-eslint/parser": "^2.30.0",
@@ -32,6 +32,7 @@
     "prettier-config-standard": "^1.0.1",
     "react": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "thumbor-lite": "^0.1.8",
     "typescript": "^3.8.3"
   },
   "description": "",
